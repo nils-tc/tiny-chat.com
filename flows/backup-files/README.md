@@ -8,11 +8,11 @@ To achieve this, follow these steps:
 
 ## 1- Set up Slack app 
 
-Firstly, ensure you have your own Slack app. If not, refer to [this guide](/slack-app/intro.md) to create one. You can utilize the provided [app manifest](app-manifest.json) file to request the necessary permissions required for this flow.
+Firstly, ensure you have your own Slack app. If not, refer to [this guide](/slack-app/README.md) to create one. You can utilize the provided [app manifest](app-manifest.json) file to request the necessary permissions required for this flow.
 
 ## 2- Enable Slack Events API
 
-Next, enable the Slack Events API to receive events from the `#tiny-chat` channel. Refer to [this guide](/slack-events-api/intro.md) for detailed instructions on enabling the Slack Events API.
+Next, enable the Slack Events API to receive events from the `#tiny-chat` channel. Refer to [this guide](/slack-events-api/README.md) for detailed instructions on enabling the Slack Events API.
 
 ## 3- Implement flow logic
 
