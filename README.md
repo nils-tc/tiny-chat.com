@@ -1,10 +1,11 @@
-# Welcome to the Tiny Chat Custom Integration Repository
+# Welcome to the Tiny Chat docs / guides / custom flows repository!
 
-This repository contains coding examples and guides on how to utilize [Tiny Chat](https://tiny-chat.com) and integrate custom flows into it. Whether you're looking to extend Tiny Chat's functionalities or learn how to integrate it with your applications, you'll find resources and examples here to guide you through the process.
+This repository contains documentation, coding examples for custom flows, and guides on how to utilize [Tiny Chat](https://tiny-chat.com). Whether you're looking to extend Tiny Chat's functionalities or learn how to integrate it with your applications, you'll find resources and examples here to guide you through the process.
 
 ## Getting Started
 
-To get started, check out the provided examples and documentation in the repository. Each example comes with detailed instructions on how to use it and integrate it into your projects.
+Be sure to have a [Tiny Chat](https://tiny-chat.com) account.
+If your custom flow needs your own slack bot, you will need access to your Slack workspace settings (you need to have the "Workspace Owner," "Admin" or "App Manager" permission).
 
 ## Contributing
 
@@ -27,3 +28,7 @@ We're here to help!
 ## License
 
 Guides and coding examples are under the [MIT License](LICENSE).
+
+## Custom flows
+
+* [Backup files to your own storage](flows/backup-files/README.md)
