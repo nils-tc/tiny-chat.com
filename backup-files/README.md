@@ -1,4 +1,4 @@
-# Custom flow for files backup 
+# Backup files on your own storage
 
 The objective of this custom flow is to backup files on your own storage instead of the temporary Tiny Chat S3 storage.
 
@@ -6,7 +6,7 @@ The objective of this custom flow is to backup files on your own storage instead
 
 To achieve this, follow these steps:
 
-## 1- Set up Slack app 
+## 1- Set up Slack app
 
 Firstly, ensure you have your own Slack app. If not, refer to [this guide](/guides/slack-app/README.md) to create one. You can utilize the provided [app manifest](app-manifest.json) file to request the necessary permissions required for this flow.
 
