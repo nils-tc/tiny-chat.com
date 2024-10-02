@@ -28,9 +28,7 @@ Using the API, you can create your own interactions with custom HTML.
 
 -   `window.tinyChat.setSlackChannelID(channelID: str)`: Routes the user's message to a different channel ID. Tiny Chat bot must be added to the channel beforehand. The user's message should not have been sent to Slack yet.
 
--   `window.tinyChat.sendBotMessage({text: str, id: str})`: Sends a new message from the bot. It should have a unique ID to prevent sending it twice.
-
--   `window.tinyChat.sendOperatorMessage({text: str, id: str, name: str, picture: str})`: Send a new message as an operator with a custom name and picture. It should have a unique ID to prevent sending it twice.
+-   `window.tinyChat.sendBotMessage({text: str, id: str, picture?: str, name?: str})`: Sends a new message from the bot. It should have a unique ID to prevent sending it twice.
 
 -   `window.tinyChat.sendCustomInteraction({html: str, id: str, text: str})`: Sends a new custom interaction with your own HTML as a string. The `text` attribute is sent to Slack. It should have a unique ID to prevent sending it twice.
 
@@ -72,6 +70,8 @@ If `chatData` is filled, permalinks to past user messages will be appended to th
 -   `window.tinyChat.locale: str`: Getter only. Retrieves the selected locale (language) of the widget. This is useful if you have enabled multiple languages for your widget, allowing you to send dynamic interactions in the appropriate language.
 
 -   `window.tinyChat.interactionIDs: str[]`: Getter only. Retrieves a list of the interaction IDs present in the widget.
+
+-   `window.tinyChat.getPresence(): boolean`: true if you are marked as present on the widget.
 
 ## Examples
 
