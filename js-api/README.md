@@ -30,6 +30,8 @@ Using the API, you can create your own interactions with custom HTML.
 
 -   `window.tinyChat.sendBotMessage({text: str, id: str})`: Sends a new message from the bot. It should have a unique ID to prevent sending it twice.
 
+-   `window.tinyChat.sendOperatorMessage({text: str, id: str, name: str, picture: str})`: Send a new message as an operator with a custom name and picture. It should have a unique ID to prevent sending it twice.
+
 -   `window.tinyChat.sendCustomInteraction({html: str, id: str, text: str})`: Sends a new custom interaction with your own HTML as a string. The `text` attribute is sent to Slack. It should have a unique ID to prevent sending it twice.
 
 -   `window.tinyChat.setTitle(text: str)`: Sets the title of the widget.
@@ -37,6 +39,8 @@ Using the API, you can create your own interactions with custom HTML.
 -   `window.tinyChat.setSubtitle(text: str)`: Sets the subtitle of the widget.
 
 -   `window.tinyChat.setSendButtonEnabled(isEnabled: boolean)`: Enables or disables the 'send message' button.
+
+-   `window.tinyChat.showNotification()`: Show the first message of the widget inside a notification popup above the chat bubble. Work only if there is one message in the widget.
 
 ## Logged-in user data
 

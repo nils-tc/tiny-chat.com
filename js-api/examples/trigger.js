@@ -1,6 +1,6 @@
 const PRODUCT_NAME = "Air Jordan 3 Retro";
 
-async function sendTrigger() {
+async function trigger() {
     // this will disable automatic messages
     window.tinyChat.disableAutomaticFlow = true;
 
@@ -11,23 +11,16 @@ async function sendTrigger() {
         id: "trigger-message",
     });
 
-    // you can also send custom HTML, such as an action button
-    await window.tinyChat.sendCustomInteraction({
-        html: '<a href="/checkout"><button>I am interested!</button></a>',
-        id: "action",
-    });
-
-    // open the widget
-    window.tinyChat.setIsOpen(true);
+    // show the message in a notification
+    window.tinyChat.showNotification();
 }
 
 document.addEventListener("tinychat:ready", () => {
-    // trigger a message after 30 seconds
+    // trigger a message after 5 seconds
     setTimeout(() => {
         // if there is no interaction (the chat has not started)
-        // or if there was only a welcome message (if the user has previously clicked on the widget)
-        if (window.tinyChat.interactionIDs.size <= 1) {
-            sendTrigger();
+        if (window.tinyChat.interactionIDs.size == 0) {
+            trigger();
         }
-    }, 30000);
+    }, 5000);
 });
