@@ -48,7 +48,7 @@ You can set `window.tinyChat.chatData` with identifying information about the us
 
 ```javascript
 window.tinyChat.chatData = {
-    user_id: str,
+    user_id: str | number,
     title?: str,
     other?: {
         email?: str,

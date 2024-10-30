@@ -1,6 +1,3 @@
-const WELCOME_MESSAGE_ID = "cf2fa9db-05f6-4dd4-b2ea-131e161852fe";
-const REPLY_MESSAGE_ID = "98d6e5ea-d77c-40a8-9d58-4ccbe8271126";
-
 document.addEventListener("tinychat:ready", () => {
     // Provide your own user
     const user = {
@@ -29,7 +26,7 @@ document.addEventListener("tinychat:ready", () => {
             // you can also apply some translation and use window.tinyChat.locale to retrieve the locale of the Tiny Chat widget (which depends on your dashboard settings and language of customer)
             text: `Hello ${user.firstName}, how can we help you today?`,
             // this should be a fixed uuid
-            id: WELCOME_MESSAGE_ID,
+            id: "welcome",
         });
 
         // react to the first message of the user
@@ -42,7 +39,7 @@ document.addEventListener("tinychat:ready", () => {
                 if (event.detail.template == "message-user") {
                     window.tinyChat.sendBotMessage({
                         text: `Thank you ${user.firstName}, please wait a bit for a member of our team to join the chat.`,
-                        id: REPLY_MESSAGE_ID,
+                        id: "wait-a-bit",
                     });
                 }
             })
