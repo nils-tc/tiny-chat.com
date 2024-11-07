@@ -53,3 +53,20 @@ You can also override specific styles to modify the widget’s appearance, such 
 ### Setting a Custom Bubble Image
 
 To apply a custom bubble image, make sure you’ve uploaded one in the Tiny Chat dashboard. If no image is set, the default icon will display even if you include an override in your CSS.
+
+### What if I cannot use templates?
+
+In some cases it's not possible for you to use `<template>`, it has happened for a customer who uses webstudio for his website.
+In this case you can remove the `<template>`, it will also work.
+
+```html
+<style id="css-for-tiny-chat">
+    #tc-container {
+        --main-color: red !important;
+        --bubble-image: url("your_image_url") !important;
+        --font-family: "Nunito, Mulish, Arial" !important;
+    }
+</style>
+```
+
+> **Note:** Using a template is better to be sure that the style will not be applied to your website.
