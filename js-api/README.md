@@ -86,4 +86,4 @@ While testing your script, you may need to reset the widget state between tests.
 -   Use a private window, and close and reopen your website between each test.
 -   Clear the local storage in your developer console.
 -   Add the ✅ emoji on Slack, which will add a button on the widget to reset it.
--   Call `window._tc.clearChat(_)` .
+-   Call `window._tc.clearChat()` .
