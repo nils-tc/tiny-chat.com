@@ -78,3 +78,12 @@ If `chatData` is filled, permalinks to past user messages will be appended to th
 -   [Logged-in user](./examples/logged-in-user.js): Use the user's name in interactions
 -   [Trigger](./examples/trigger.js): Trigger a bot message after a delay
 -   [Custom interaction and routing](./examples/custom-interaction-and-routing.js): Allow the user to pick a topic before sending the message to Slack.
+
+## Testing
+
+While testing your script, you may need to reset the widget state between tests. Here are several options:
+
+-   Use a private window, and close and reopen your website between each test.
+-   Clear the local storage in your developer console.
+-   Add the ✅ emoji on Slack, which will add a button on the widget to reset it.
+-   Call `window._tc.clearChat(_)` .

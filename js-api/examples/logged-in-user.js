@@ -25,7 +25,7 @@ document.addEventListener("tinychat:ready", () => {
         window.tinyChat.sendBotMessage({
             // you can also apply some translation and use window.tinyChat.locale to retrieve the locale of the Tiny Chat widget (which depends on your dashboard settings and language of customer)
             text: `Hello ${user.firstName}, how can we help you today?`,
-            // this should be a fixed uuid
+            // ID is necessary to prevent duplication of messages
             id: "welcome",
         });
 

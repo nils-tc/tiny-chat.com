@@ -32,6 +32,7 @@ Guides and coding examples are under the [MIT License](LICENSE).
 ## Docs
 
 -   [Backup files to your own storage](backup-files/README.md)
+-   [Override Tiny Chat css](guides/override-css/README.md)
 -   [JavaScript API](js-api/README.md)
     -   [Logged-in user](js-api/examples/logged-in-user.js): Use the user's name in interactions
     -   [Trigger](js-api/examples/trigger.js): Trigger a bot message after a delay
